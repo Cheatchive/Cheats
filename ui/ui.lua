@@ -1,32 +1,3 @@
-```lua
---[[
-    WinUI - Windows 11 inspired Roblox UI Framework
-    API:
-
-    local UILibrary = loadstring(game:HttpGet(URL))()
-
-    local Window = UILibrary:CreateWindow("My Script", {
-        Size = {X = 600, Y = 400}
-    })
-
-    local MainTab = Window:CreateTab("Main", "🏠")
-
-    MainTab:AddButton({
-        Text = "Click Me!",
-        Callback = function()
-            print("Button clicked!")
-        end
-    })
-
-    MainTab:AddToggle({
-        Text = "Enable Feature",
-        Default = false,
-        Callback = function(value)
-            print("Toggle:", value)
-        end
-    })
-]]
-
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -1027,4 +998,3 @@ function UILibrary:CreateWindow(title, options)
 end
 
 return UILibrary
-```
